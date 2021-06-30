@@ -6,5 +6,6 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :posted_by, UserType, null: true, method: :user
+    field :votes, [VoteType], null: false
   end
 end

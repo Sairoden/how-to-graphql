@@ -9,5 +9,6 @@ module Types
     def all_links
       Link.all
     end
+
   end
 end
